@@ -1,0 +1,321 @@
+================================
+   GENERAL PAGE DESIGN
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f3ef;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADINGS
+================================ */
+
+h1 {
+    text-align: center;
+    color: #1f1f1f;
+    font-size: 32px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    text-align: center;
+    color: #8b6508;
+    font-size: 27px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+h5 {
+    text-align: center;
+    color: #555;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+/* ================================
+   PARAGRAPHS
+================================ */
+
+p {
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+body > p {
+    text-align: center;
+}
+
+
+/* ================================
+   HORIZONTAL LINES
+================================ */
+
+hr {
+    border: none;
+    height: 2px;
+    background: #c9a227;
+    margin: 35px 0;
+}
+
+
+/* ================================
+   TABLE DESIGN
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0 40px 0;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #222;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+tr:hover {
+    background: #fff8e5;
+}
+
+td h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #8b6508;
+}
+
+td p {
+    margin: 0;
+}
+
+
+/* ================================
+   SOUP / EXTRA MEAT LISTS
+================================ */
+
+ul {
+    background: white;
+    padding: 20px 30px;
+    margin: 15px 0;
+    border-left: 5px solid #c9a227;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+li {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+
+/* ================================
+   ORDER SECTION
+================================ */
+
+label {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+
+/* ================================
+   INPUT BOXES
+================================ */
+
+input[type="text"],
+input[type="number"],
+input[type="name"],
+input[type="food"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="name"]:focus,
+input[type="food"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border-color: #c9a227;
+    box-shadow: 0 0 5px rgba(201, 162, 39, 0.3);
+}
+
+
+/* ================================
+   LARGE ADDRESS BOX
+================================ */
+
+textarea {
+    width: 100%;
+    height: 220px;
+    padding: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: vertical;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #c9a227;
+    box-shadow: 0 0 6px rgba(201, 162, 39, 0.3);
+}
+
+
+/* ================================
+   CHECKBOXES AND RADIO BUTTONS
+================================ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    accent-color: #c9a227;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+button {
+    padding: 14px 28px;
+    margin: 20px 8px 20px 0;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c9a227;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   ORDER FORM AREA
+================================ */
+
+form {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================================
+   MOBILE RESPONSIVENESS
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    td p {
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 220px;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
